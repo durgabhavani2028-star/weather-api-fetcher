@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather API Fetcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <h2>🌦️ Weather API Fetcher</h2>
+    <button onclick="toggleTheme()">🌙</button>
+    <button onclick="getLocationWeather()">📍</button>
+</div>
+
+<div class="search">
+    <input type="text" id="cityInput" placeholder="Enter City">
+    <button onclick="getWeather()">Search</button>
+</div>
+
+<div id="current"></div>
+
+<div class="layout">
+    <div id="week"></div>
+    <div id="hourly"><h3>Click a day</h3></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

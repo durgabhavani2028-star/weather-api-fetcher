@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #eef3fb;
+    transition: 0.3s;
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.topbar {
+    background: #1a73e8;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    text-align: center;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.layout {
+    display: flex;
+    margin-top: 10px;
+}
+
+#week {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.day {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.day:hover {
+    background: #dbe7ff;
+}
+
+#hourly {
+    flex: 1;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* DARK MODE BOX */
+.dark .day,
+.dark #hourly {
+    background: #2a2a2a;
+    color: white;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .layout {
+        flex-direction: column;
+    }
+
+    #week {
+        flex-direction: row;
+        overflow-x: auto;
+        width: 100%;
+    }
+}
